@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/speechText"
+            android:layout_width="match_parent"
+            android:layout_height="83dp"
+            android:text="speech text..."
+            android:textAlignment="center"
+            android:textSize="26sp"
+            tools:layout_editor_absoluteX="79dp"
+            tools:layout_editor_absoluteY="133dp" />
+
+        <Button
+            android:id="@+id/recordButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="recordSpeech"
+            android:text="Play"
+            android:layout_gravity="bottom"
+            tools:layout_editor_absoluteX="148dp"
+            tools:layout_editor_absoluteY="374dp" />
+    </FrameLayout>
+
+</android.support.constraint.ConstraintLayout>
